@@ -1,0 +1,247 @@
+.body {
+  background-color: #f9f9f9;
+  padding: 8px;
+}
+
+.welcomeDeep {
+  background: linear-gradient(to bottom, #6d37ff, #0c0ce9);
+  width: 100%;
+  padding-bottom: 7%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+
+.welcomeHeader {
+  padding: 10px;
+  display: flex;
+  margin-bottom: 5%;
+}
+
+.hamburgermenu {
+  background-color: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.hamburgermenu:hover {
+  background-color: transparent !important; /* Optional: override hover effect */
+}
+.hamburgermenu::after {
+  display: none !important; /* Hide the default arrow icon */
+}
+.navbarWrapper {
+  margin-left: auto;
+  margin-right: 30px;
+}
+.linkList {
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+}
+
+.link:hover {
+  color: #0c0ce9;
+}
+
+.headersvg {
+  width: 40px;
+  height: 35px;
+}
+
+.headertext {
+  padding: 1px;
+  margin-top: 1px;
+  margin-left: 5px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.rectboxheader {
+  width: 90%;
+  height: 427px;
+}
+
+.headermain {
+  padding: 10px;
+  display: flex;
+  margin-left: 7%;
+}
+
+.headertextmain {
+  color: #ffffff;
+  font-size: 40px;
+  margin-right: 15%;
+  margin-bottom: 12px;
+}
+
+.headertextmedium {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.headertextsmall {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  max-width: 240px;
+}
+
+.boxsvg {
+  width: 80%;
+  height: 300px;
+}
+
+.secondboxwelcom {
+  background-color: #f6eeee;
+  width: 90%;
+  padding-bottom: 7%;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.secondheadertext {
+  margin-bottom: 4%;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.secondmaintext {
+  font-size: 13px;
+  font-weight: 400;
+  max-width: 400px;
+  margin: 0 auto;
+  padding-bottom: 5%;
+}
+
+.iconsflex {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.arrowStyle {
+  font-size: 60px;
+  margin-top: 15px;
+}
+
+.circlesvg {
+  width: 148px;
+  height: 132px;
+}
+
+.circlesvgtext {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  .rectboxheader {
+    width: 70%;
+    height: 427px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .welcomeDeep {
+    background: linear-gradient(to bottom, #6d37ff, #0c0ce9);
+    width: 100%;
+    padding-bottom: 7%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+  }
+
+  .welcomeHeader {
+    padding: 10px;
+    display: flex;
+    margin-bottom: 5%;
+  }
+
+  .headersvg {
+    width: 20px;
+    height: 15px;
+    margin-top: 5px;
+  }
+
+  .linkList {
+    padding: 0;
+    font-size: 8px;
+  }
+
+  .headertext {
+    margin-left: 5px;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .headermain {
+    padding: 10px;
+    display: flex;
+    margin-left: 7%;
+  }
+
+  .headertextmain {
+    color: #ffffff;
+    font-size: 15px;
+    margin-right: 15%;
+    margin-bottom: 12px;
+  }
+
+  .headertextmedium {
+    color: #ffffff;
+    font-size: 7px;
+    font-weight: 400;
+  }
+
+  .headertextsmall {
+    color: #ffffff;
+    font-size: 5px;
+    font-weight: 500;
+    max-width: 100px;
+  }
+  .boxsvg {
+    width: 90%;
+    height: 135px;
+  }
+
+  .secondheadertext {
+    margin-bottom: 4%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .secondmaintext {
+    font-size: 7px;
+    font-weight: 400;
+    max-width: 200px;
+    margin: 0 auto;
+    padding-bottom: 3%;
+  }
+
+  .iconsflex {
+    display: flex;
+    gap: 8px;
+  }
+
+  .arrowStyle {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  .circlesvg {
+    width: vmax;
+    height: 60px;
+  }
+
+  .circlesvgtext {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
