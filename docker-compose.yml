@@ -1,10 +1,9 @@
-version: '3'
-
+version: '3.8'
 services:
-  web:
-    build: .
+  app:
+    container_name: docker-react-doc
+    image: docker-react-i
+    build:
+      context: .
     ports:
-      - "3000:3000"
-    volumes:
-      - .:/app
-    command: npm start
+      - 80:80

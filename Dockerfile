@@ -1,23 +1,17 @@
-# Use the official Node.js 14 image as a base image
-FROM node:14
+# Stage 1
+FROM node:20-alpine as builder
+WORKDIR /app
 
-# Set the working directory inside the container
-WORKDIR /usr/src/app
-
-# Copy package.json and package-lock.json to the working directory
-COPY package*.json ./
-
-# Install dependencies
-RUN npm install
-
-# Copy the rest of the application code to the working directory
 COPY . .
+RUN rm package-lock.json
+RUN yarn install --frozen-lockfile
+RUN yarn build
 
-# Build the React app
-RUN npm run build
+# Stage
+FROM nginx:stable-alpine
 
-# Expose port 3000 to the outside world
-EXPOSE 3000
+COPY --from=builder /app/build /usr/share/nginx/html
+COPY default.conf /etc/nginx/conf.d/default.conf
 
-# Command to run the application
-CMD ["npm", "start"]
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
