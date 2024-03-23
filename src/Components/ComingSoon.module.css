@@ -32,12 +32,12 @@
   background: -moz-linear-gradient(left, #0c0ce9, #222e99);
   background: -o-linear-gradient(left, #0c0ce9, #222e99);
   width: 90%;
+  padding: 3%;
 }
-.button:hover{
-    background-color: #e8eaef !important;
-    color: #050505;
+.button:hover {
+  background-color: #e8eaef !important;
+  color: #050505;
 }
-
 
 @media only screen and (min-width: 768px) {
   .first_text {

@@ -60,7 +60,7 @@
 }
 
 .rectboxheader {
-  width: 90%;
+  width: 75%;
   height: 427px;
 }
 
@@ -70,10 +70,13 @@
   margin-left: 7%;
 }
 
+.headermain > div {
+  flex: 3;
+}
+
 .headertextmain {
   color: #ffffff;
   font-size: 40px;
-  margin-right: 15%;
   margin-bottom: 12px;
 }
 
@@ -93,16 +96,19 @@
 .boxsvg {
   width: 80%;
   height: 300px;
+  flex: 3;
 }
 
 .secondboxwelcom {
   background-color: #f6eeee;
   width: 90%;
-  padding-bottom: 7%;
-  border-radius: 10px;
+  padding-bottom: 5%;
+  padding-top: 1%;
+  border-radius: 35px;
   margin: 0 auto;
-  padding: 20px;
   text-align: center;
+  margin-bottom: 5%;
+  box-shadow: 0px 35px 0 -25px rgba(0, 0, 0, 0.1);
 }
 
 .secondheadertext {
@@ -141,14 +147,14 @@
   font-weight: bold;
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .rectboxheader {
     width: 70%;
     height: 427px;
   }
-}
+} */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 768px) {
   .welcomeDeep {
     background: linear-gradient(to bottom, #6d37ff, #0c0ce9);
     width: 100%;
@@ -184,6 +190,10 @@
     padding: 10px;
     display: flex;
     margin-left: 7%;
+    gap: 5%;
+  }
+  .headermain > div {
+    flex: 3;
   }
 
   .headertextmain {
@@ -208,6 +218,7 @@
   .boxsvg {
     width: 90%;
     height: 135px;
+    flex: 3;
   }
 
   .secondheadertext {
@@ -238,6 +249,7 @@
   .circlesvg {
     width: vmax;
     height: 60px;
+    padding: 5px;
   }
 
   .circlesvgtext {
